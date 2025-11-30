@@ -44,15 +44,23 @@
  * -------------------------------------------------------------------------- */
 
 :root {
+  --vp-c-arcio-1: #62B6CB;
+  --vp-c-arcio-2: #3D9FB8;
+  --vp-c-arcio-3: #2E778A;
+
+  --vp-c-gold-1: #E6AF2E;
+  --vp-c-gold-2: #C99418;
+  --vp-c-gold-3: #926B11;
+
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  --vp-c-brand-1: var(--vp-c-gold-1);
+  --vp-c-brand-2: var(--vp-c-arcio-2);
+  --vp-c-brand-3: var(--vp-c-arcio-2);
+  --vp-c-brand-soft: var(--vp-c-arcio-soft);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -94,13 +102,13 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
-    #bd34fe 30%,
-    #41d1ff
+    var(--vp-c-gold-1) 10%,
+    var(--vp-c-arcio-1) 60%
   );
 
   --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
+    0deg,
+    var(--vp-c-gold-1) 30%,
     #47caff 50%
   );
   --vp-home-hero-image-filter: blur(44px);
