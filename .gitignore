@@ -1,0 +1,9 @@
+# VitePress Cache
+.vitepress/cache/
+
+# VitePress Build Output
+dist/
+
+# Weitere Ignorierte Dateien/Ordner (falls benötigt)
+node_modules/
+.DS_Store
