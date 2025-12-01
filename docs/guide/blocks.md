@@ -18,8 +18,3 @@ This page lists Arcio's primary items and blocks.
 - Leylight components: Arc Funnel, Chromatic Emitter, Leylight Mirror, Prism, Focal Array, Command Transceiver, Arc Depot (see Leylight page).
 
 Each block has clear input/output faces and configurable behavior where applicable.
-
-test ex <ItemPreview name="Shard Catalyst" /> abvdf
-<ItemPreview name="Crystalized Mana" />
-<ItemPreview name="Zinc" />
-<ItemPreview name="Arcanium" />

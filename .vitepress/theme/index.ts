@@ -4,6 +4,7 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import ItemPreview from '../src/components/ItemPreview.vue'
+import IndexerStop from '../src/components/IndexerStop.vue'
 
 export default {
   extends: DefaultTheme,
@@ -15,5 +16,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     // ...
     app.component('ItemPreview', ItemPreview)
+    app.component('IndexerStop', IndexerStop)
   }
 } satisfies Theme
