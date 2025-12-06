@@ -4,7 +4,7 @@ import { itemData } from './src/data/items'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
-  base: "/arcio-docs/",
+  base: "/",
   title: "🧙 Arcio",
   description: "A magical Hytale automation mod",
   themeConfig: {
