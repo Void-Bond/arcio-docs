@@ -7,11 +7,15 @@ export default defineConfig({
   base: "/",
   title: "🧙 Arcio",
   description: "A magical Hytale automation mod",
+  head: [
+    ['link', { rel: 'icon', href: '/public/sigil.png' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
       provider: 'local'
     },
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },

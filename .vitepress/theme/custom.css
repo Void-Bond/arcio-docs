@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Amaranth";
+  src: url("/public/fonts/Amaranth-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amaranth";
+  src: url("/public/fonts/Amaranth-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amaranth";
+  src: url("/public/fonts/Amaranth-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amaranth";
+  src: url("/public/fonts/Amaranth-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Finlandica";
+  src: url("/public/fonts/Finlandica-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Finlandica";
+  src: url("/public/fonts/Finlandica-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --vp-font-family-base: "Finlandica", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --vp-font-family-header: "Amaranth", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* h1::first-letter {
+        color: red !important;
+        font-family: monospace;
+    } */
+
+.VPContent {
+  background-image: radial-gradient(
+    rgba(127, 127, 127, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 16px 16px;
+  background-repeat: repeat;
+
+  /* mask to fade out the pattern toward the edges */
+  /* -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%); */
+  /* mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%); */
+}
+
+--arc-color: var(--vp-c-bg);
+
+.brand {
+  --arc-color: var(--vp-c-brand-2);
+}
+
+.VPContent.is-home {
+  background: url("/public/hytale_bg.jpg") no-repeat center / cover !important;
+  position: relative;
+
+  &:before {
+    backdrop-filter: blur(4px) brightness(0.8);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+}
+
+.VPNavBar.home :is(.VPNavBarMenu, .VPSocialLinks, .VPNavBarTitle),
+.VPHome {
+  --vp-c-text-1: #dfdfd6;
+  --vp-c-text-2: #98989f;
+  --vp-c-text-3: #6a6a71;
+  --vp-c-bg: #1b1b1f;
+  --vp-c-bg-alt: #161618;
+  --vp-c-bg-elv: #202127;
+  --vp-c-bg-soft: #202127;
+}
+
+.VPHome .VPFeature {
+  background: rgba(88, 191, 247, 0.15);
+  backdrop-filter: blur(2px) brightness(1.5) saturate(0.6);
+}
+.VPHome :is(span, p, h2) {
+  color: var(--vp-c-text-1);
+}
+
+.VPHero .VPButton {
+  /* border-image-slice: 16 16 16 16 fill;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("/public/panel_border.png");
+  border-radius: 0 !important;
+  border-color: transparent !important;
+  background-color: unset !important; */
+
+  height: 50px;
+  min-width: 150px;
+  align-content: center;
+}
+
+.VPFeature {
+  /* --setting-1: 4px;
+    --setting-2: 9px;
+    --setting-3: 8px;
+    --setting-4: 16px;
+    --color-1: var(--vp-c-brand-2);
+    --color-2: var(--vp-c-brand-2);
+    background: radial-gradient(
+          circle at 100% 100%,
+          var(--vp-c-bg) 0,
+          var(--vp-c-bg) var(--setting-1),
+          transparent var(--setting-1)
+        )
+        0% 0% / var(--setting-2) var(--setting-2) no-repeat,
+      radial-gradient(
+          circle at 0 100%,
+          var(--vp-c-bg) 0,
+          var(--vp-c-bg) var(--setting-1),
+          transparent var(--setting-1)
+        )
+        100% 0% / var(--setting-2) var(--setting-2) no-repeat,
+      radial-gradient(
+          circle at 100% 0,
+          var(--vp-c-bg) 0,
+          var(--vp-c-bg) var(--setting-1),
+          transparent var(--setting-1)
+        )
+        0% 100% / var(--setting-2) var(--setting-2) no-repeat,
+      radial-gradient(
+          circle at 0 0,
+          var(--vp-c-bg) 0,
+          var(--vp-c-bg) var(--setting-1),
+          transparent var(--setting-1)
+        )
+        100% 100% / var(--setting-2) var(--setting-2) no-repeat,
+      linear-gradient(var(--vp-c-bg), var(--vp-c-bg)) 50% 50% /
+        calc(100% - var(--setting-3)) calc(100% - var(--setting-4)) no-repeat,
+      linear-gradient(var(--vp-c-bg), var(--vp-c-bg)) 50% 50% /
+        calc(100% - var(--setting-4)) calc(100% - var(--setting-3)) no-repeat,
+      linear-gradient(90deg, var(--color-1) 0%, var(--color-2) 100%); */
+  border-radius: 8px;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+.heading,
+.VPNavBarMenu .VPLink {
+  font-family: var(--vp-font-family-header);
+}
