@@ -7,7 +7,7 @@ hero:
   text: "A magical Hytale automation mod"
   tagline: You don't need to be a wizard to build complex mana-logic systems.
   image:
-    src: /shard_catalyst_banner.png
+    src: /shard_catalyst_banner_v2.png
   actions:
     - theme: brand
       text: Getting Started
@@ -15,6 +15,10 @@ hero:
     - theme: alt
       text: API Examples
       link: /api/
+    - theme: alt
+      text: Join our Discord
+      link: https://discord.void.bond/
+      icon: discord
 
 features:
   - title: "Mana Automation ✨"

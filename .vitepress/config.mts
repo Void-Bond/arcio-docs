@@ -5,11 +5,12 @@ import { itemData } from './src/data/items'
 export default defineConfig({
   srcDir: "docs",
   base: "/",
-  title: "🧙 Arcio",
+  title: "Arcio",
   description: "A magical Hytale automation mod",
   head: [
     ['link', { rel: 'icon', href: '/public/sigil.png' }]
   ],
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
@@ -53,7 +54,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Void-Bond/arcio' },
-      { icon: 'discord', link: 'https://discord.gg/8tX9us8XBN' },
+      { icon: 'discord', link: 'https://discord.void.bond/' },
     ],
     footer: {
       message: "Made with ✨",

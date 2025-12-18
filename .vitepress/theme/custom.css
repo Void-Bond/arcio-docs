@@ -74,8 +74,22 @@
   /* mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%); */
 }
 
---arc-color: var(--vp-c-bg);
+:root {
+  --arc-color: var(--vp-c-bg);
 
+  body {
+    --vp-home-hero-name-background: -webkit-linear-gradient(
+      120deg,
+      var(--vp-c-arcio-3) 10%,
+      var(--vp-c-arcio-1) 60%
+    );
+    --vp-home-hero-image-background-image: linear-gradient(
+      0deg,
+      var(--vp-c-arcio-1) 30%,
+      var(--vp-c-arcio-3) 50%
+    );
+  }
+}
 .brand {
   --arc-color: var(--vp-c-brand-2);
 }
@@ -112,11 +126,34 @@
 }
 
 .VPHome .VPFeature {
-  background: rgba(88, 191, 247, 0.15);
-  backdrop-filter: blur(2px) brightness(1.5) saturate(0.6);
+  background: rgba(88, 191, 247, 0.05);
+  backdrop-filter: blur(10px) brightness(1) saturate(0.5);
 }
 .VPHome :is(span, p, h2) {
   color: var(--vp-c-text-1);
+}
+
+body {
+  .VPSidebarItem {
+    &.is-active .item .link > .text {
+      color: var(--vp-c-arcio-2) !important;
+      /* text-shadow: 0 0 10px var(--vp-c-arcio-1); */
+      transform: translateX(5px);
+    }
+
+    .item .link > .text {
+      transition: all 0.3s ease-out;
+    }
+  }
+  .VPNavBarMenuLink {
+    &.active {
+      color: var(--vp-c-arcio-2) !important;
+    }
+  }
+}
+
+.VPHome .name.clip {
+  text-shadow: 0 0 40px var(--vp-c-arcio-3);
 }
 
 .VPHero .VPButton {
