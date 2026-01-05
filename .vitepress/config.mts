@@ -61,7 +61,7 @@ export default defineConfig({
     ],
     footer: {
       message: "Made with ✨",
-      copyright: "Copyright © 2025 Void Bond"
+      copyright: "Copyright © 2026 Void Bond"
     }
   }
 })
