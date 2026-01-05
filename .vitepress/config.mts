@@ -10,6 +10,9 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/public/sigil.png' }]
   ],
+  sitemap: {
+    hostname: 'https://arcio.void.bond',
+  },
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
