@@ -36,7 +36,6 @@ export default defineConfig({
             { text: '🌟 Overview', link: '/guide/overview' },
             { text: '🧱 Blocks & Items', link: '/guide/blocks' },
             { text: '⚙️ Core Mechanics', link: '/guide/mechanics' },
-            { text: '✨ Leylight', link: '/guide/leylight' },
             { text: '🛠️ Advanced Features', link: '/guide/advanced' },
             { text: '🌍 Community & Sharing', link: '/guide/community' },
             { text: '📅 Development Plans', link: '/guide/development' }
@@ -60,7 +59,7 @@ export default defineConfig({
       { icon: 'discord', link: 'https://discord.void.bond/' },
     ],
     footer: {
-      message: "Made with ✨",
+      message: "Made with Magic",
       copyright: "Copyright © 2026 Void Bond"
     }
   }
